@@ -35,27 +35,30 @@ section{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: #618C03;
+    background: #A9BF04;
     color: #fff;
-    padding: 2rem 3.5rem;
+    padding: 1.5rem 2rem;
     cursor: pointer;
     font-size: 1.7rem;
 }
 
 .btn:hover{
-    background: #A9BF04;
+    background: #618C03;
+    border-radius: 5rem;
+    color: white;
+    padding: 2rem 2.5rem;
 }
 
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
     background: #F2F2F2;
-    padding: 2rem 9%;
+    padding: 0.5rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
-    box-shadow: 0 5rem 1rem rgba(0,0,0,.3);
+    box-shadow: 0 2rem 1rem rgba(0,0,0,.3);
 }
 header .logo{
     font-size: 3rem;
@@ -79,12 +82,12 @@ header .navbar a:hover{
 
 header .icons a{
     font-size: 3rem;
-    color: #618C03;
+    color: #A9BF04;
     margin-left: 1.5rem;
 }
 
 header.icons a:hover{
-    color: var(--green);
+    color: var(#A9BF04);
 }
 
 header #toggler{
@@ -105,9 +108,10 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-width: 100vh;
-    background: url(../public/fondo2.jpg) no-repeat;
+    background: url(../public/fondo.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 100px;
 }
 
 .home .content{
@@ -115,13 +119,13 @@ header .fa-bars{
 }
 
 .home .content h3{
-    font-size: 6rem;
+    font-size: 5rem;
     color: #333;
 }
 
 .home .content span{
     font-size: 3.5rem;
-    color: var(--green);
+    color: #618C03;
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -132,11 +136,45 @@ header .fa-bars{
     padding: 1rem 0;
     line-height: 1.5;
 }
+/* --------------------home end------------------- */
+
+/* --------------------sobre mi star------------------- */
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    color: black;
+    padding: 1rem;
+    margin: 2rem;
+    background: #CBD966;
+}
+
+.sobreMi .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.sobreMi .columHabilidades{
+    flex:1 1 40rem;
+    position: relative;
+    background: #A9BF04;
+}
+.sobreMi .columnaSkill{
+    flex:1 1 40rem;
+    position:1.5rem;
+    background: #618C03;
+    border-radius: .5rem;
+    box-shadow: 0 .2rem 1rem #333;
+
+}
+/* --------------------sobre mi end------------------- */
 
 
 
-
-/* -----------------------------medias q----------------------------- */
+/* -----------------------------medias q home----------------------------- */
 @media (max-width:991px) {
     html{
         font-size: 55%;
@@ -146,6 +184,9 @@ header .fa-bars{
     }
     section{
         padding: 2rem;
+    }
+    .home{
+        background-position: left;
     }
 }
 
@@ -176,5 +217,8 @@ header .fa-bars{
 @media (max-width:450px) {
     html{
         font-size: 50%;
+    }
+    .heading{/* --medias q sobre mi-- */
+        font-size: 3rem;
     }
 }
